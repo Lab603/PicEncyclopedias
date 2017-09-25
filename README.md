@@ -1,17 +1,11 @@
-# TensorFlow Android stand-alone demo
+##  An Android app of image recognition with TensorFlow.
 
-Android demo source files extracted from original TensorFlow source. (TensorFlow r0.10)
+> * 持续更新
 
-To build this demo, you don't need to prepare build environment with Bazel, and it only requires AndroidStudio.
+> * 2017.9.18 提交框架
 
-If you would like to build jni codes, only NDK is requied to build it.
+> * 2017.9.21 上传原型文档 V001
 
-![image](http://narr.jp/private/miyoshi/tensorflow/tensorflow_screen1.png)
+> * 2017.9.22 更新原型文档
 
-## How to build jni codes
-First install NDK, and set path for NDK tools, and then type commands below to create .so file.
-
-    $ cd jni-build
-    $ make
-    $ make install
-
+> * 2017.9.25 修改框架
