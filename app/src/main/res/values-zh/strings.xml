@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PicEncyclopedias</string>
+
+    <string name="pick_all_photo">所有图片</string>
+    <string name="pick_photos">照片</string>
+    <string name="pick_pick">选取</string>
+    <string name="pick_photo_size">(%1$s)</string>
+    <string name="pick_photo_size_limit">最多选择%1$s张图片</string>
+</resources>

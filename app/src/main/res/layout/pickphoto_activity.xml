@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/intro_layout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_gradient_dusk"/>
+
+    <ImageView
+        android:id="@+id/background_stars"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_stars"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_moon"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="-40dp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/bg_mountains_geometric"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/bg_rectangle_outline_white_pressed"
+        android:orientation="vertical"
+        android:paddingBottom="12dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp"
+            android:text="Pick Photo:"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <com.lab603.picencyclopedias.PicPhotoSimple.CustomButton
+            android:id="@+id/btn1"
+            style="@style/CustomButtonStyle"
+            android:text="Single Select" />
+
+        <!--<com.werb.pickphotosample.CustomButton-->
+        <!--style="@style/CustomButtonStyle"-->
+        <!--android:id="@+id/btn2"-->
+        <!--android:text="Multi Select"/>-->
+
+        <!--<com.werb.pickphotosample.CustomButton-->
+        <!--style="@style/CustomButtonStyle"-->
+        <!--android:id="@+id/btn3"-->
+        <!--android:text="Photo Preview"/>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/photo_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:foregroundGravity="center" />
+    </LinearLayout>
+</FrameLayout>
