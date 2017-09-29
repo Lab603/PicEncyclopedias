@@ -22,15 +22,17 @@
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <uses-sdk
         android:minSdkVersion="21"
         android:targetSdkVersion="23" />
 
     <application android:allowBackup="true"
-        android:debuggable="true"
         android:label="@string/app_name"
-        android:icon="@drawable/ic_camera"
+        android:icon="@drawable/ic_launcher"
         android:theme="@style/AppTheme">
         <activity android:name="com.lab603.picencyclopedias.MainActivity"
             android:screenOrientation="portrait"
@@ -40,6 +42,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".PicPhotoSimple.PickPhoto_Activity"></activity>
+        <activity android:name=".pickphotoview.PickPhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PickAppThemeBottom"/>
+
+        <activity android:name=".pickphotoview.PickListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PickAppThemeRight"/>
+
+        <activity android:name=".pickphotoview.PickPhotoPreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PickAppThemeRight"/>
+
     </application>
 
 </manifest>

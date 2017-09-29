@@ -4,5 +4,9 @@
     <string name="tab_2">Cam</string>
     <string name="tab_3">Home</string>
 
-
+    <string name="pick_all_photo">All Photos</string>
+    <string name="pick_photos">Photo</string>
+    <string name="pick_pick">Select</string>
+    <string name="pick_photo_size">(%1$s)</string>
+    <string name="pick_photo_size_limit">Max size %1$s </string>
 </resources>

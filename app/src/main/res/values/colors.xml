@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#dcdae6</color>
     <color name="colorInactive">#747474</color>
     <color name="colorActiveSmall">#FFFFFF</color>
     <color name="colorInactiveSmall">#50FFFFFF</color>
@@ -23,5 +23,22 @@
         <item name="tab_4">#6C4A42</item>
         <item name="tab_5">#F63D2B</item>
     </array>
+
+    <!-- Basic Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_pressed">#c8ffffff</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="pick_black">#191919</color>
+    <color name="pick_light">#E6E7EB</color>
+    <color name="pick_white">#FFFFFF</color>
+    <color name="pick_transparent">#00000000</color>
+    <color name="pick_parse">#33999999</color>
+    <color name="pick_gray">#AFB0B3</color>
+    <color name="pick_green">#00C07F</color>
+    <color name="pick_blue">#35C8E6</color>
+    <color name="pick_placeholder">#c5e1e1e1</color>
+    <color name="pick_bottom">#E5E5E5</color>
+    <color name="colorStart_Button">#33bf1d</color>
 
 </resources>

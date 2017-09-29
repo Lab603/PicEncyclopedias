@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatDelegate;
 import android.view.Window;
@@ -19,8 +20,8 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private DemoFragment demoFragment;
-    private DemoViewPagerAdapter adapter;
+    private MenuFragment menuFragment;
+    private ViewPagerAdapter adapter;
     private ArrayList<AHBottomNavigationItem> bottomNavigationItems = new ArrayList<>();
     private Handler handler = new Handler();
 
@@ -33,16 +34,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Window window = getWindow();
         //隐藏标题栏
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        //隐藏状态栏
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        //隐藏状态栏
 //        ActionBar actionBar = getSupportActionBar();
 //        if (actionBar != null) {
 //            actionBar.hide();
 //        }
         //定义全屏参数
-        int flag = WindowManager.LayoutParams.FLAG_FULLSCREEN;
+//        int flag = WindowManager.LayoutParams.FLAG_FULLSCREEN;
         //设置当前窗体为全屏显示
-        window.setFlags(flag, flag);
+//        window.setFlags(flag, flag);
         boolean enabledTranslucentNavigation = getSharedPreferences("shared", Context.MODE_PRIVATE)
                 .getBoolean("translucentNavigation", false);
         setTheme(enabledTranslucentNavigation ? R.style.AppTheme_TranslucentNavigation : R.style.AppTheme);
@@ -84,31 +85,32 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigation.setTranslucentNavigationEnabled(true);
 
         bottomNavigation.setOnTabSelectedListener(new AHBottomNavigation.OnTabSelectedListener() {
+
             @Override
             public boolean onTabSelected(int position, boolean wasSelected) {
 
-                    if (demoFragment == null) {
-                        demoFragment = adapter.getMenuFragment();
+                    if (menuFragment == null) {
+                        menuFragment = adapter.getMenuFragment();
                     }
 
                     if (wasSelected) {
-                        demoFragment.refresh();
+                        menuFragment.refresh();
                         return true;
                     }
 
-                    if (demoFragment != null) {
-                        demoFragment.willBeHidden();
+                    if (menuFragment != null) {
+                        menuFragment.willBeHidden();
                     }
 
                     viewPager.setCurrentItem(position, false);
 
-                    if (demoFragment == null) {
+                    if (menuFragment == null) {
                         return true;
                     }
 
 
-                demoFragment = adapter.getMenuFragment();
-                demoFragment.willBeDisplayed();
+                menuFragment = adapter.getMenuFragment();
+                menuFragment.willBeDisplayed();
 
 
 
@@ -125,10 +127,10 @@ public class MainActivity extends AppCompatActivity {
 		*/
 
         viewPager.setOffscreenPageLimit(4);
-        adapter = new DemoViewPagerAdapter(getSupportFragmentManager());
+        adapter = new ViewPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
 
-        demoFragment = adapter.getMenuFragment();
+        menuFragment = adapter.getMenuFragment();
 
 
     }

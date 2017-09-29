@@ -40,6 +40,14 @@ public class CameraFragment extends Fragment {
     private final TensorFlowClassifier tensorflow = new TensorFlowClassifier();
     private TextView mResultText;
 
+    public static MenuFragment newInstance(int index) {
+        MenuFragment fragment = new MenuFragment();
+        Bundle b = new Bundle();
+        b.putInt("index", index);
+        fragment.setArguments(b);
+        return fragment;
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
