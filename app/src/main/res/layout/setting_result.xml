@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#33bf1d">
+
+        <TextView
+            android:id="@+id/setting_result"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/pick_white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/back_setting_result"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_x"
+            android:background="@drawable/button_select"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+
+
+    </RelativeLayout>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/text_13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:scrollbars="vertical"
+        android:ellipsize="end"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Powerd by TensorFlow"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"/>
+
+</LinearLayout>

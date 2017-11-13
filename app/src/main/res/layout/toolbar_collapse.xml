@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#33bf1d" >
+
+    <ImageView
+        android:id="@+id/iv_scan"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/camera2"
+        android:background="@drawable/button_select"/>
+
+    <ImageView
+        android:id="@+id/iv_pay"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/iv_scan"
+        android:src="@drawable/album2"
+        android:background="@drawable/button_select"/>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_charge"-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_toRightOf="@+id/iv_pay"-->
+        <!--android:src="@drawable/small_charge" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_money"-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_toRightOf="@+id/iv_charge"-->
+        <!--android:src="@drawable/small_money" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_plus"-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:src="@drawable/icon_plus" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#33bf1d"
+        android:gravity="center"
+        android:text="PicEncyclopedias"
+        android:textColor="@color/pick_white"
+        android:textSize="20dp"
+        android:textStyle="italic|bold"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="50dp"/>
+
+    <View
+        android:id="@+id/v_collapse_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent" />
+
+</RelativeLayout>

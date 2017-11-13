@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/config_view_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FFFFFF"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <ImageView
+                android:id="@+id/Home_left_x"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="18dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_x" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:textColor="#bbbbbb"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:layout_gravity="center"/>
+        </android.support.v7.widget.Toolbar>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#bbbbbb" />
+        <FrameLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00000000"
+                />
+
+            <TextView
+                android:id="@+id/textView_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="10dp"
+                android:text="关于PicEncyclopedias"
+                android:textColor="#000000"
+                android:textSize="15dp"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#bbbbbb" />
+        <FrameLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00000000"
+                />
+
+            <TextView
+                android:id="@+id/textView_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="10dp"
+                android:text="首选项"
+                android:textColor="#000000"
+                android:textSize="15dp"/>
+        </FrameLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#bbbbbb" />
+        <FrameLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00000000"
+                />
+
+            <TextView
+                android:id="@+id/textView_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="10dp"
+                android:text="社交"
+                android:textColor="#000000"
+                android:textSize="15dp"/>
+        </FrameLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#bbbbbb" />
+        <FrameLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00000000"
+                />
+
+            <TextView
+                android:id="@+id/textView_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="10dp"
+                android:text="隐私"
+                android:textColor="#000000"
+                android:textSize="15dp"/>
+        </FrameLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#bbbbbb" />
+        <FrameLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00000000"
+                />
+
+            <TextView
+                android:id="@+id/textView_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="10dp"
+                android:text="许可"
+                android:textColor="#000000"
+                android:textSize="15dp"/>
+        </FrameLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#bbbbbb" />
+        <FrameLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00000000"
+                />
+
+            <TextView
+                android:id="@+id/textView_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="10dp"
+                android:text="支持"
+                android:textColor="#000000"
+                android:textSize="15dp"/>
+        </FrameLayout>
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:text="登出"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/textView" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:text="V01(001)"
+            android:layout_marginRight="20dp"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp" />
+
+</RelativeLayout>

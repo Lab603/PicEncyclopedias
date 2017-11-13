@@ -5,9 +5,13 @@ import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatDelegate;
+import android.util.Log;
+import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 
@@ -17,6 +21,8 @@ import com.aurelhubert.ahbottomnavigation.AHBottomNavigationViewPager;
 
 
 import java.util.ArrayList;
+
+import qiu.niorgai.StatusBarCompat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,18 +38,20 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Window window = getWindow();
+//        Window window = getWindow();
         //隐藏标题栏
 //        requestWindowFeature(Window.FEATURE_NO_TITLE);
-//        //隐藏状态栏
-//        ActionBar actionBar = getSupportActionBar();
-//        if (actionBar != null) {
-//            actionBar.hide();
-//        }
-        //定义全屏参数
+        //隐藏状态栏
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
+//        //定义全屏参数
 //        int flag = WindowManager.LayoutParams.FLAG_FULLSCREEN;
-        //设置当前窗体为全屏显示
+//        //设置当前窗体为全屏显示
 //        window.setFlags(flag, flag);
+        StatusBarCompat.setStatusBarColor(this, getResources().getColor(R.color.colorStart_Button), 0);
+//        StatusBarCompat.translucentStatusBar(this);
         boolean enabledTranslucentNavigation = getSharedPreferences("shared", Context.MODE_PRIVATE)
                 .getBoolean("translucentNavigation", false);
         setTheme(enabledTranslucentNavigation ? R.style.AppTheme_TranslucentNavigation : R.style.AppTheme);
@@ -69,17 +77,18 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigation = (AHBottomNavigation) findViewById(R.id.bottom_navigation);
         viewPager = (AHBottomNavigationViewPager) findViewById(R.id.view_pager);
 
-        AHBottomNavigationItem item1 = new AHBottomNavigationItem(R.string.tab_1, R.drawable.ic_menu, R.color.color_tab_1);
-        AHBottomNavigationItem item2 = new AHBottomNavigationItem(R.string.tab_2, R.drawable.ic_camera, R.color.color_tab_2);
-        AHBottomNavigationItem item3 = new AHBottomNavigationItem(R.string.tab_3, R.drawable.ic_face, R.color.color_tab_3);
+        AHBottomNavigationItem item1 = new AHBottomNavigationItem(R.string.tab_1, R.drawable.ic_home, R.color.color_tab_1);
+        AHBottomNavigationItem item2 = new AHBottomNavigationItem(R.string.tab_2, R.drawable.ic_star, R.color.color_tab_2);
+        AHBottomNavigationItem item3 = new AHBottomNavigationItem(R.string.tab_3, R.drawable.ic_setting, R.color.color_tab_3);
 
         bottomNavigationItems.add(item1);
         bottomNavigationItems.add(item2);
         bottomNavigationItems.add(item3);
         // Change colors
-        bottomNavigation.setAccentColor(Color.parseColor("#383639"));
-        bottomNavigation.setInactiveColor(Color.parseColor("#AEB8C3"));
+        bottomNavigation.setAccentColor(Color.parseColor("#33bf1d"));
+        bottomNavigation.setInactiveColor(Color.parseColor("#383639"));
 
+        bottomNavigation.setTitleTextSizeInSp(12,11);
         bottomNavigation.addItems(bottomNavigationItems);
 
         bottomNavigation.setTranslucentNavigationEnabled(true);
@@ -108,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                         return true;
                     }
 
-
+                Log.e("我被点击了","!!!");
                 menuFragment = adapter.getMenuFragment();
                 menuFragment.willBeDisplayed();
 

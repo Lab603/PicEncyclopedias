@@ -1,19 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
- Copyright 2014 The Android Open Source Project
-
- Licensed under the Apache License, Version 2.0 (the "License");
- you may not use this file except in compliance with the License.
- You may obtain a copy of the License at
-
-     http://www.apache.org/licenses/LICENSE-2.0
-
- Unless required by applicable law or agreed to in writing, software
- distributed under the License is distributed on an "AS IS" BASIS,
- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- See the License for the specific language governing permissions and
- limitations under the License.
--->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lab603.picencyclopedias">
@@ -25,6 +10,9 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -34,7 +22,7 @@
         android:label="@string/app_name"
         android:icon="@drawable/ic_launcher"
         android:theme="@style/AppTheme">
-        <activity android:name="com.lab603.picencyclopedias.MainActivity"
+        <activity android:name="com.lab603.picencyclopedias.SplashActivity"
             android:screenOrientation="portrait"
             android:label="@string/app_name">
             <intent-filter>
@@ -42,6 +30,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ConfigView"></activity>
         <activity android:name=".PicPhotoSimple.PickPhoto_Activity"></activity>
         <activity android:name=".pickphotoview.PickPhotoActivity"
             android:screenOrientation="portrait"

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#33bf1d">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="Result:"
+            android:textColor="@color/pick_white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/back_result"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_x"
+            android:background="@drawable/button_select"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv01"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_centerHorizontal="true"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/t01"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border_shadow"
+        android:textSize="20dp"/>
+
+</LinearLayout>
