@@ -1,5 +1,7 @@
 ##  An Android app of image recognition with TensorFlow.
 
+> ![ShowGif](https://github.com/Lab603/PicEncyclopedias/blob/master/Document/show_gif.gif)
+
 > * 持续更新
 
 > * 2017.9.18 提交框架
@@ -14,6 +16,4 @@
 
 > * 2017.10.4 大改版
 
-> * 2017.11.07 发现在Android7.0.1系统环境下无法打开摄像头拍照（debugged）
-
-> ![ShowGif](https://github.com/Lab603/PicEncyclopedias/blob/master/Document/show_gif.gif)
+> * 2017.11.07 ~~发现在Android7.0.1系统环境下无法打开摄像头拍照~~（debugged）
