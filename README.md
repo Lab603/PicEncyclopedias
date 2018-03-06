@@ -15,3 +15,5 @@
 > * 2017.10.4 大改版
 
 > * 2017.11.07 发现在Android7.0.1系统环境下无法打开摄像头拍照（debugged）
+
+> ![ShowGif](https://github.com/Lab603/PicEncyclopedias/blob/master/Document/show_gif.gif)
