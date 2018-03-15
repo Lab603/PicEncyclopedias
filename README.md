@@ -1,5 +1,9 @@
 ##  An Android app of image recognition with TensorFlow.
 
+
+[![npm](https://img.shields.io/npm/l/express.svg)](https://github.com/Lab603/PicEncyclopedias/blob/master/LICENSE) 
+
+
 > ![ShowGif](https://github.com/Lab603/PicEncyclopedias/blob/master/Document/show_gif.gif)
 
 > * 持续更新
